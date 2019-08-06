@@ -82,9 +82,9 @@ $(document).on("click","i[name=add_row_btn]",function() {
 						<h2 class="head_1">반려 동물 여부를 선택해주세요</h2>
 						<div class="pet_type">
 							<div class="pet">
-								<input type="radio" id="pet_true" class="radio_btn, c_btn" name="radio" value="1" /> 유
+								<input type="radio" id="pet_true" class="radio_btn, c_btn" name="pet_radio" value="1" /> 유
 								<input type="text" id="pet_text" class="pet_text" name="pet_text" placeholder="종류를 입력하세요" disabled />
-								<input type="radio" id="pet_false" class="radio_btn, c_btn" name="radio" value="0" /> 무
+								<input type="radio" id="pet_false" class="radio_btn, c_btn" name="pet_radio" value="0" /> 무
 							</div>
 						</div>
 
@@ -140,7 +140,7 @@ $(document).on("click","i[name=add_row_btn]",function() {
 								<div class="prices">
 									<ul>
 										<li class="price">${price}</li>
-										<li><input type="text" class="i_price" name="price" placeholder="금액 입력" /> 원</li>
+										<li><input type="text" class="i_price" name="price" placeholder="금액 입력" numberOnly/> 원</li>
 									</ul>
 								</div>
 							</c:forEach>
@@ -171,10 +171,10 @@ $(document).on("click","i[name=add_row_btn]",function() {
 					<div class="content5" id="content5" style="display: none;">
 						<h2 class="head_5">제목을 입력해주세요</h2>
 						<div>
-							<input type="text" class="post_title" name="post_title" placeholder="제목을 20자리 이내로 작성하세요" maxlength="20">
+							<input type="text" class="post_title" id="post_title" name="post_title" placeholder="제목을 20자리 이내로 작성하세요" maxlength="20">
 						</div>
 						<h2 class="head_5">상세 설명을 입력해주세요</h2>
-						<textarea class="post_contents" name="post_contents" rows="14" cols="60" placeholder="맡길 물건에 대한 간단한 설명을 입력해주세요" maxlength="1000"></textarea>
+						<textarea class="post_contents" id="post_contents" name="post_contents" rows="14" cols="60" placeholder="맡길 물건에 대한 간단한 설명을 입력해주세요" maxlength="1000"></textarea>
 					</div>
 				<!-- </form> -->
 				
