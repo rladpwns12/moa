@@ -1,9 +1,6 @@
 package com.moa.model.dao;
 
-import com.moa.model.vo.SimpleStorageAddressVO;
-import com.moa.model.vo.SimpleStorageBoardVO;
-import com.moa.model.vo.StoreBoardFormVO;
-import com.moa.model.vo.StoreBoardVO;
+import com.moa.model.vo.*;
 
 import java.util.List;
 import java.util.Map;
@@ -17,6 +14,7 @@ public interface StoreBoardDAO {
     List<SimpleStorageBoardVO> searchMyStorage(Map<String, Object> storageInfo);
     int searchMyStorageCnt(int hostId);
     StoreBoardVO searchOne(int articleNum);
+    List<EntrustSearchVO> searchEntrust(DetailOptionVO detail);
     int insert(StoreBoardFormVO storeBoardFormVO);
 
     int delete(int articleNum);
