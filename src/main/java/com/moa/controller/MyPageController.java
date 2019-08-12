@@ -186,7 +186,7 @@ public class MyPageController {
         mav.addObject(list);
         mav.addObject(pagination);
 
-       
+
 
         return mav;
     }
@@ -241,7 +241,6 @@ public class MyPageController {
     @ResponseBody
     @RequestMapping("/message/read/{messageNumber}")
     public boolean messageRead(@PathVariable int messageNumber){
-
         return messengerListService.messageRead(messageNumber);
     }
 
